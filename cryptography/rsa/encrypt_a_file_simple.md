@@ -8,7 +8,7 @@ You may use the `-a` option to enable base64 encoding
 
 >You will be prompted for a password.
 
-## 4: Decrypt
+## Decrypt
 
 `openssl enc -d -aes-256-cbc -in PALANTIR-Guide.pdf.aes -out PALANTIR-Guide.pdf`
 
