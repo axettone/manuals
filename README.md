@@ -1,2 +1,4 @@
 # manuals
-Useful stuff found in the web
+Useful stuff found on the web.
+
+**Author:** Paolo Niccolò Giubelli _paoloniccolo.giubelli@gmail.com_
