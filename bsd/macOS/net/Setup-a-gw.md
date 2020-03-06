@@ -1,4 +1,4 @@
-# Setup macOS as ad internet gateway
+# Setup macOS as an internet gateway
 
 ## Run on macOS as root
 
