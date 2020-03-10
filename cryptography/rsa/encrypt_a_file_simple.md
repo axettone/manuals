@@ -10,6 +10,10 @@ You may use the `-a` option to enable base64 encoding
 
 ## Decrypt
 
-`openssl enc -d -aes-256-cbc -in PALANTIR-Guide.pdf.aes -out PALANTIR-Guide.pdf`
+`openssl enc -d -aes-256-cbc -salt -in PALANTIR-Guide.pdf.aes -out PALANTIR-Guide.pdf`
 
 >You will be prompted for a password.
+
+## A note for macOS users
+
+On macOS there's an old version on openssl, using MD5 as the digest algor by default. This may result in lower security and interoperability issues. You should use `-md md5` if you're decoding a file encoded on macOS, unless you specify a better hashing algo.

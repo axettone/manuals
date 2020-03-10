@@ -38,3 +38,7 @@ Decrypt the key
 Now you can decrypt the file
 
 `openssl enc -d -aes-256-cbc -in PALANTIR-Guide.pdf.aes -out PALANTIR-Guide.pdf -pass file:key.bin`
+
+## A note for macOS users
+
+On macOS there's an old version on openssl, using MD5 as the digest algor by default. This may result in lower security and interoperability issues. You should use `-md md5` if you're decoding a file encoded on macOS, unless you specify a better hashing algo.
