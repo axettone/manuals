@@ -8,6 +8,10 @@ You may use the `-a` option to enable base64 encoding
 
 >You will be prompted for a password.
 
+# Why not use PGP or GnuGPG?
+
+Because I wanted something very very portable. Openssl is the only requirement.
+
 ## Decrypt
 
 `openssl enc -d -aes-256-cbc -salt -in PALANTIR-Guide.pdf.aes -out PALANTIR-Guide.pdf`
