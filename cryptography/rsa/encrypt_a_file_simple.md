@@ -17,3 +17,19 @@ You may use the `-a` option to enable base64 encoding
 ## A note for macOS users
 
 On macOS there's an old version on openssl, using MD5 as the digest algor by default. This may result in lower security and interoperability issues. You should use `-md md5` if you're decoding a file encoded on macOS, unless you specify a better hashing algo.
+
+## Make an alias/function!
+
+Edit your terminal emulator rc file (eg. `~/.bashrc` or `~/.zshrc`) and add those lines:
+
+```
+encrypt() {
+        openssl enc -e -aes-256-cbc -a -salt -md sha256 -in ${1} -out ${2}
+}
+decrypt() {
+        openssl enc -d -aes-256-cbc -a -salt -md sha256 -in ${1} -out ${2}
+}
+```
+then
+`source ~/.bashrc` or `source ~/.zshrc`
+and now you can use `encrypt <source> <dest>` and `decrypt <source> <dest>` as you like.
