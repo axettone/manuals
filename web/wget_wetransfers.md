@@ -12,3 +12,11 @@ and append the following line
 ```
 alias weget='wget --user-agent Mozilla/4.0'
 ```
+
+Sometimes it doesn't work, because you need to use a more realistic
+user agent.
+
+I like this
+```
+--user-agent= "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0"
+```
