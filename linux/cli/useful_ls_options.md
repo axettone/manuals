@@ -4,7 +4,7 @@
 
 `ls -1`
 
-## Liste all items ordered by date
+## List all items ordered by date
 
 `ls -alt`
 
