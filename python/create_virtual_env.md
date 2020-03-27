@@ -13,7 +13,7 @@ or equivalent on your system.
 
 Build your virtual env with
 
-`sudo python3 -m venv your_project_name_venv`
+`python3 -m venv your_project_name_venv`
 
 Now step into the virtual environment with:
 
