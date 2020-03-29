@@ -11,4 +11,4 @@ Install ImageMagick and type this:
 # mogrify -format jpeg -path thumbs -thumbnail 1024x1024 *.jpg
 ```
 
-You'll find the thumbnails inside the `pictures/thumbs`.
+You'll find the thumbnails inside the `pictures/thumbs` folder.
